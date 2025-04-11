@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
             </AnimatedSection>
             <AnimatedSection animation="fade-in" delay={300}>
               <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                Hi, I'm <span className="highlight-gradient">Alex Chen</span>
+                Hi, I'm <span className="highlight-gradient">Tharusha Jayawardena</span>
                 <br />
                 UI/UX Designer & Developer
               </h2>
