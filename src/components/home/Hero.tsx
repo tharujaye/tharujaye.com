@@ -18,11 +18,11 @@ const Hero: React.FC = () => {
               </h1>
             </AnimatedSection>
             <AnimatedSection animation="fade-in" delay={300}>
-              <h2 className="text-5xl md:text-7xl font-bold mb-2">
+              <h2 className="text-4xl md:text-7xl font-bold mb-2">
                 <div className="text-highlight-purple">Tharusha Jayawardena</div>
                 <div className="text-blue-400">Jayawardena</div>
               </h2>
-              <div className="text-4xl md:text-5xl font-bold mt-4 mb-6">
+              <div className="text-3xl md:text-5xl font-bold mt-4 mb-6">
                 UI/UX Designer & Developer
               </div>
             </AnimatedSection>
