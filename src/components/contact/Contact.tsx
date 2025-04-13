@@ -58,20 +58,20 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: 'Email',
-      value: 'hello@example.com',
-      link: 'mailto:hello@example.com',
+      value: 'tharushajayawardane05@gmail.com',
+      link: 'mailto:tharushajayawardane05@gmail.com',
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      value: '+94769496380',
+      link: 'tel:+94769496380',
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       title: 'Office',
-      value: 'San Francisco, CA',
-      link: 'https://maps.google.com/?q=San+Francisco,+CA',
+      value: 'Ambalangoda, Sri Lanka',
+      link: 'https://maps.app.goo.gl/xqSaUyFRhGFmJMx17',
     },
   ];
 
@@ -195,7 +195,7 @@ const Contact: React.FC = () => {
                 </p>
                 <div className="flex gap-4">
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com/tharujaye" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="h-12 w-12 bg-secondary rounded-full flex items-center justify-center hover:bg-primary/10 text-foreground/70 hover:text-primary transition-colors"
@@ -206,7 +206,7 @@ const Contact: React.FC = () => {
                     </svg>
                   </a>
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://linkedin.com/tharujaye" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="h-12 w-12 bg-secondary rounded-full flex items-center justify-center hover:bg-primary/10 text-foreground/70 hover:text-primary transition-colors"
@@ -219,7 +219,7 @@ const Contact: React.FC = () => {
                     </svg>
                   </a>
                   <a 
-                    href="https://behance.net" 
+                    href="https://behance.net/tharujaye" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="h-12 w-12 bg-secondary rounded-full flex items-center justify-center hover:bg-primary/10 text-foreground/70 hover:text-primary transition-colors"
@@ -233,7 +233,7 @@ const Contact: React.FC = () => {
                     </svg>
                   </a>
                   <a 
-                    href="https://dribbble.com" 
+                    href="https://dribbble.com/tharujaye" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="h-12 w-12 bg-secondary rounded-full flex items-center justify-center hover:bg-primary/10 text-foreground/70 hover:text-primary transition-colors"
