@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDownCircle, Github, Linkedin, MoveRight } from 'lucide-react';
@@ -17,7 +18,7 @@ const Hero: React.FC = () => {
             </AnimatedSection>
             <AnimatedSection animation="fade-in" delay={300}>
               <h2 className="text-4xl md:text-6xl font-bold mb-6 max-w-4xl">
-                Hi, I'm <span className="highlight-gradient">Tharusha Jayawardena</span>
+                <span className="highlight-gradient">Tharusha Jayawardena</span>
                 <br />
                 UI/UX Designer & Developer
               </h2>
