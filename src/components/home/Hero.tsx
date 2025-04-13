@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
             <AnimatedSection animation="fade-in" delay={600}>
               <div className="flex gap-6 mt-12">
                 <a 
-                  href="https://linkedin.com/tharujaye" 
+                  href="https://www.linkedin.com/in/tharujaye/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-foreground/70 hover:text-primary transition-colors"
