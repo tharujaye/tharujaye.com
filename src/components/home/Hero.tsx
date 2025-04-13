@@ -47,15 +47,6 @@ const Hero: React.FC = () => {
             <AnimatedSection animation="fade-in" delay={600}>
               <div className="flex gap-6 mt-12">
                 <a 
-                  href="https://github.com/tharujaye" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  <Github size={22} />
-                  <span className="sr-only">GitHub</span>
-                </a>
-                <a 
                   href="https://linkedin.com/tharujaye" 
                   target="_blank"
                   rel="noopener noreferrer"
@@ -63,6 +54,16 @@ const Hero: React.FC = () => {
                 >
                   <Linkedin size={22} />
                   <span className="sr-only">LinkedIn</span>
+                </a>
+
+                <a 
+                  href="https://github.com/tharujaye" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/70 hover:text-primary transition-colors"
+                >
+                  <Github size={22} />
+                  <span className="sr-only">GitHub</span>
                 </a>
               </div>
             </AnimatedSection>
