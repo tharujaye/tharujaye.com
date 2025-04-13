@@ -55,7 +55,7 @@ const Header: React.FC = () => {
       <div className="container flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <span className="text-xl font-heading font-bold highlight-gradient">Portfolio.</span>
+          <span className="text-xl font-heading font-bold highlight-gradient">tharujaye</span>
         </Link>
 
         {/* Desktop Navigation */}
