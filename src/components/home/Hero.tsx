@@ -9,18 +9,22 @@ const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex flex-col justify-center pt-20">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          {/* Left content - Takes 7 columns on large screens */}
+          <div className="lg:col-span-7">
             <AnimatedSection animation="fade-in" delay={200}>
               <h1 className="text-sm uppercase tracking-widest text-primary mb-4">
-                Bsc. Computer Science (UG)
+                CREATIVE PROFESSIONAL
               </h1>
             </AnimatedSection>
             <AnimatedSection animation="fade-in" delay={300}>
-              <h2 className="text-4xl md:text-6xl font-bold mb-6 max-w-4xl">
-                <span className="highlight-gradient">Tharusha Jayawardena</span>
-                <div className="text-foreground mt-2">UI/UX Designer & Developer</div>
+              <h2 className="text-5xl md:text-7xl font-bold mb-2">
+                <div className="text-highlight-purple">Tharusha</div>
+                <div className="text-blue-400">Jayawardena</div>
               </h2>
+              <div className="text-4xl md:text-5xl font-bold mt-4 mb-6">
+                UI/UX Designer & Developer
+              </div>
             </AnimatedSection>
             <AnimatedSection animation="fade-in" delay={400}>
               <p className="text-lg text-muted-foreground mb-8 max-w-lg">
@@ -30,7 +34,7 @@ const Hero: React.FC = () => {
             </AnimatedSection>
             <AnimatedSection animation="fade-in" delay={500}>
               <div className="flex flex-wrap gap-4">
-                <Button asChild size="lg">
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                   <Link to="/portfolio" className="flex items-center gap-2">
                     View My Work <MoveRight size={16} />
                   </Link>
@@ -64,28 +68,35 @@ const Hero: React.FC = () => {
             </AnimatedSection>
           </div>
 
-          <AnimatedSection 
-            animation="fade-in-left" 
-            className="lg:w-1/3"
-            delay={700}
-          >
-            <div className="relative">
-              <div className="aspect-square rounded-full bg-gradient-to-br from-highlight-purple to-highlight-cyan/30 blur-3xl absolute top-0 left-0 w-full h-full opacity-20" />
-              <img 
-                src="/placeholder.svg" 
-                alt="Tharusha Jayawardena - Creative Professional" 
-                className="relative z-10 rounded-3xl w-full h-auto object-cover"
-              />
-              <div className="absolute -bottom-6 -left-6 bg-background rounded-2xl p-4 shadow-lg border border-border z-20">
-                <p className="text-sm font-medium">Experience</p>
-                <p className="text-2xl font-bold">8+ Years</p>
+          {/* Right content - Takes 5 columns on large screens */}
+          <div className="lg:col-span-5 relative">
+            <AnimatedSection 
+              animation="fade-in" 
+              delay={700}
+              className="flex justify-center"
+            >
+              <div className="relative w-full max-w-md">
+                <div className="aspect-square rounded-xl bg-gradient-to-br from-highlight-purple to-highlight-cyan/30 blur-3xl absolute top-0 left-0 w-full h-full opacity-20" />
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Tharusha Jayawardena - Creative Professional" 
+                  className="relative z-10 rounded-xl w-full h-auto object-cover"
+                />
+                
+                {/* Projects info box */}
+                <div className="absolute -top-6 -right-6 bg-black/90 rounded-2xl p-4 shadow-lg border border-border z-20">
+                  <p className="text-sm font-medium text-gray-400">Projects</p>
+                  <p className="text-2xl font-bold">150+</p>
+                </div>
+                
+                {/* Experience info box */}
+                <div className="absolute -bottom-6 -left-6 bg-black/90 rounded-2xl p-4 shadow-lg border border-border z-20">
+                  <p className="text-sm font-medium text-gray-400">Experience</p>
+                  <p className="text-2xl font-bold">8+ Years</p>
+                </div>
               </div>
-              <div className="absolute -top-6 -right-6 bg-background rounded-2xl p-4 shadow-lg border border-border z-20">
-                <p className="text-sm font-medium">Projects</p>
-                <p className="text-2xl font-bold">150+</p>
-              </div>
-            </div>
-          </AnimatedSection>
+            </AnimatedSection>
+          </div>
         </div>
       </div>
 
