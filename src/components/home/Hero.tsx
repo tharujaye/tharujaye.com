@@ -13,14 +13,13 @@ const Hero: React.FC = () => {
           <div>
             <AnimatedSection animation="fade-in" delay={200}>
               <h1 className="text-sm uppercase tracking-widest text-primary mb-4">
-                Bsc. Computer Science (UG)
+                Creative Professional
               </h1>
             </AnimatedSection>
             <AnimatedSection animation="fade-in" delay={300}>
               <h2 className="text-4xl md:text-6xl font-bold mb-6 max-w-4xl">
                 <span className="highlight-gradient">Tharusha Jayawardena</span>
-                <br />
-                UI/UX Designer & Developer
+                <div className="text-foreground mt-2">UI/UX Designer & Developer</div>
               </h2>
             </AnimatedSection>
             <AnimatedSection animation="fade-in" delay={400}>
@@ -67,14 +66,14 @@ const Hero: React.FC = () => {
 
           <AnimatedSection 
             animation="fade-in-left" 
-            className="hidden lg:flex justify-end"
+            className="lg:w-1/3"
             delay={700}
           >
-            <div className="relative w-full max-w-md">
+            <div className="relative">
               <div className="aspect-square rounded-full bg-gradient-to-br from-highlight-purple to-highlight-cyan/30 blur-3xl absolute top-0 left-0 w-full h-full opacity-20" />
               <img 
                 src="/placeholder.svg" 
-                alt="Alex Chen - Creative Professional" 
+                alt="Tharusha Jayawardena - Creative Professional" 
                 className="relative z-10 rounded-3xl w-full h-auto object-cover"
               />
               <div className="absolute -bottom-6 -left-6 bg-background rounded-2xl p-4 shadow-lg border border-border z-20">
