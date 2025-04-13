@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                 : 'py-4 bg-transparent'
         )}
     >
-        <div className="relative container flex items-center justify-between min-h-[60px]">
+        <div className="relative container max-w-screen-2xl mx-auto flex items-center justify-between min-h-[60px]">
             {/* Logo */}
             <Link to="/" className="flex items-center">
                 <span className="text-xl font-heading font-bold highlight-gradient">tharujaye</span>
