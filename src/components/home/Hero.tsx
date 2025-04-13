@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
           <div className="lg:col-span-7">
             <AnimatedSection animation="fade-in" delay={200}>
               <h1 className="text-sm uppercase tracking-widest text-primary mb-4">
-                CREATIVE PROFESSIONAL
+                Bsc. Computer Science (UG)
               </h1>
             </AnimatedSection>
             <AnimatedSection animation="fade-in" delay={300}>
