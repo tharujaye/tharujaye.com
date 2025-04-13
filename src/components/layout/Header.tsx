@@ -52,7 +52,7 @@ const Header: React.FC = () => {
           : 'py-4 bg-transparent'
       )}
     >
-      <div className="container flex items-center justify-between">
+      <div className="relative container flex items-center justify-between min-h-[60px]">
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <span className="text-xl font-heading font-bold highlight-gradient">tharujaye</span>
@@ -96,38 +96,41 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-md shadow-lg border-b">
-          <nav className="container py-6">
-            <ul className="flex flex-col gap-4">
-              {navigation.map((item) => (
-                <li key={item.name}>
-                  <Link
-                    to={item.href}
-                    className={cn(
-                      'block py-2 font-medium transition-colors hover:text-primary',
-                      location.pathname === item.href 
-                        ? 'text-primary' 
-                        : 'text-foreground/80'
-                    )}
-                  >
-                    {item.name}
-                  </Link>
+      {/* ✅ Mobile Menu */}
+      <div className="relative w-full md:hidden">
+        {isMenuOpen && (
+          <div className="absolute top-full left-0 w-full bg-background/95 backdrop-blur-md shadow-lg border-b z-40">
+            <nav className="container py-6">
+              <ul className="flex flex-col gap-4">
+                {navigation.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      to={item.href}
+                      className={cn(
+                        'block py-2 font-medium transition-colors hover:text-primary',
+                        location.pathname === item.href 
+                          ? 'text-primary' 
+                          : 'text-foreground/80'
+                      )}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+                <li className="pt-4">
+                  <Button className="w-full flex items-center gap-1 justify-center">
+                    <Download size={16} />
+                    Download Resume
+                  </Button>
                 </li>
-              ))}
-              <li className="pt-4">
-                <Button className="w-full flex items-center gap-1 justify-center">
-                  <Download size={16} />
-                  Download Resume
-                </Button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      )}
+              </ul>
+            </nav>
+          </div>
+        )}
+      </div>
     </header>
   );
+
 };
 
 export default Header;
