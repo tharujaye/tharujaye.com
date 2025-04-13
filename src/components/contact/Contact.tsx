@@ -33,6 +33,8 @@ const formSchema = z.object({
   }),
 });
 
+
+
 const Contact: React.FC = () => {
   const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
@@ -91,7 +93,22 @@ const Contact: React.FC = () => {
             <div className="bg-card border border-border p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                <form 
+                  name="contact" 
+                  method="POST" 
+                  data-netlify="true" 
+                  netlify-honeypot="bot-field"
+                  onSubmit={form.handleSubmit(onSubmit)} 
+                  className="space-y-6"
+                >
+                  {/* Hidden fields for Netlify */}
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p className="hidden">
+                    <label>
+                      Don’t fill this out: <input name="bot-field" />
+                    </label>
+                  </p>
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <FormField
                       control={form.control}
