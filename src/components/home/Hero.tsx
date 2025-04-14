@@ -111,11 +111,20 @@ const Hero: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                    <path d="M7 7l4 5 4-5"></path>
-                    <path d="M7 17h10"></path>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18" // Reduced size
+                    height="18" // Reduced size
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M14.5 15.13c5.238 0 9.5 4.262 9.5 9.5s-4.262 9.5-9.5 9.5S5 29.869 5 24.63 9.262 15.13 14.5 15.13M14.5 12.13C7.596 12.13 2 17.727 2 24.63s5.596 12.5 12.5 12.5S27 31.534 27 24.63 21.404 12.13 14.5 12.13L14.5 12.13zM34 16.13c.771 0 3 2.923 3 8.5s-2.229 8.5-3 8.5-3-2.923-3-8.5S33.229 16.13 34 16.13M34 13.13c-3.314 0-6 5.149-6 11.5s2.686 11.5 6 11.5 6-5.149 6-11.5S37.314 13.13 34 13.13L34 13.13zM43.5 14.129999999999999A2.5 10.5 0 1043.5 35.129999999999995 2.5 10.5 0 1043.5 14.129999999999999z"></path>
                   </svg>
+
                   <span className="sr-only">Medium</span>
                 </a>
               </div>
