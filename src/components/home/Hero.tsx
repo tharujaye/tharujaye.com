@@ -90,8 +90,8 @@ const Hero: React.FC = () => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="20" // Reduced size
-                    height="20" // Reduced size
+                    width="24" // Reduced size
+                    height="24" // Reduced size
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -113,8 +113,8 @@ const Hero: React.FC = () => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="18" // Reduced size
-                    height="18" // Reduced size
+                    width="24" // Reduced size
+                    height="24" // Reduced size
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
