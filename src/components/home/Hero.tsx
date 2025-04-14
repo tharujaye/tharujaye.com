@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDownCircle, Github, Linkedin, MoveRight } from 'lucide-react';
@@ -82,8 +81,7 @@ const Hero: React.FC = () => {
                   <span className="sr-only">Dribbble</span>
                 </a>
 
-                {/* Added Behance Icon */}
-                
+                {/* Adjusted Behance Icon */}
                 <a
                   href="https://www.behance.net/tharujaye"
                   target="_blank"
@@ -92,8 +90,8 @@ const Hero: React.FC = () => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
+                    width="18" // Reduced size
+                    height="18" // Reduced size
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
