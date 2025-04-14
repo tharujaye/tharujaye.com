@@ -65,6 +65,53 @@ const Hero: React.FC = () => {
                   <Github size={22} />
                   <span className="sr-only">GitHub</span>
                 </a>
+
+                {/* Added Dribbble Icon */}
+                <a 
+                  href="https://dribbble.com/tharujaye" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/70 hover:text-primary transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path>
+                    <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"></path>
+                    <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"></path>
+                  </svg>
+                  <span className="sr-only">Dribbble</span>
+                </a>
+
+                {/* Added Behance Icon */}
+                <a 
+                  href="https://www.behance.net/tharujaye" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/70 hover:text-primary transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M8 10v5h5a2.5 2.5 0 1 0 0-5z"></path>
+                    <path d="M2 3h4"></path>
+                    <path d="M10 3h8a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
+                    <path d="M22 7v10c0 2-2 3-5 3s-5-1-5-3v-10"></path>
+                  </svg>
+                  <span className="sr-only">Behance</span>
+                </a>
+
+                {/* Added Medium Icon */}
+                <a 
+                  href="https://medium.com/@tharujaye" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/70 hover:text-primary transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <path d="M7 7l4 5 4-5"></path>
+                    <path d="M7 17h10"></path>
+                  </svg>
+                  <span className="sr-only">Medium</span>
+                </a>
               </div>
             </AnimatedSection>
           </div>
