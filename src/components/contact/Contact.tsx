@@ -130,7 +130,7 @@ const Contact: React.FC = () => {
                       id="name"
                       name="name"
                       required
-                      className="w-full border rounded px-3 py-2"
+                      className="w-full px-3 py-2 rounded border border-border bg-background text-foreground placeholder:text-muted-foreground"
                     />
                   </div>
 
@@ -143,7 +143,7 @@ const Contact: React.FC = () => {
                       id="email"
                       name="email"
                       required
-                      className="w-full border rounded px-3 py-2"
+                      className="w-full px-3 py-2 rounded border border-border bg-background text-foreground placeholder:text-muted-foreground"
                     />
                   </div>
 
@@ -156,7 +156,7 @@ const Contact: React.FC = () => {
                       name="message"
                       required
                       rows={4}
-                      className="w-full border rounded px-3 py-2"
+                      className="w-full px-3 py-2 rounded border border-border bg-background text-foreground placeholder:text-muted-foreground"
                     />
                   </div>
 
