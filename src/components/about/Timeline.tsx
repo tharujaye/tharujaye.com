@@ -59,19 +59,19 @@ const Timeline: React.FC = () => {
       year: '2023 - Present',
       title: 'UI/UX Designer',
       company: 'TechForward',
-      description: 'Leading design strategy and implementation for enterprise SaaS products, managing a team of designers, and collaborating with product managers and developers.',
+      description: 'Designed and developed responsive websites and applications, collaborated with marketing teams to create brand identities, and optimized user experiences. Leading design strategy and implementation for enterprise SaaS products, managing a team of designers, and collaborating with product managers and developers.',
     },
     {
       year: '2023 - present',
       title: 'Music Producer',
       company: 'Tiii Jay Music',
-      description: 'Created user-centered designs for mobile applications and web platforms, conducted user research, and implemented design systems that improved consistency.',
+      description: 'Produced LOFI and released multiple singles, EPs, and albums. Developed a unique sound and style that blends different genres, including hip-hop, and electronic music.',
     },
     {
       year: '2023 - present',
       title: 'Digital Marketing',
       company: 'Tharu Jaye Studios',
-      description: 'Designed and developed responsive websites and applications, collaborated with marketing teams to create brand identities, and optimized user experiences.',
+      description: '',
     },
     {
       year: '2022 - present',
