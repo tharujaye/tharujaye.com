@@ -117,10 +117,15 @@ const Header: React.FC = () => {
                                 </li>
                             ))}
                             <li className="pt-4">
-                                <Button className="w-full flex items-center gap-1 justify-center">
-                                    <Download size={16} />
-                                    Download Resume
-                                </Button>
+                                <a
+                                  href="/path-to-your-resume.pdf" // Replace with the actual path to your PDF file
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="w-full flex items-center gap-1 justify-center bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition"
+                                >
+                                  <Download size={16} />
+                                  Download Resume
+                                </a>
                             </li>
                         </ul>
                     </nav>
