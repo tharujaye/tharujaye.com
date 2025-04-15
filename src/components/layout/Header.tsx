@@ -79,10 +79,15 @@ const Header: React.FC = () => {
 
                 <div className="flex items-center gap-4">
                     <ThemeToggle />
-                    <Button size="sm" className="flex items-center gap-1">
+                    <a
+                        href="/TharushaJayawardenaCV.pdf" // Replace with the actual path to your PDF file
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition"
+                    >
                         <Download size={16} />
-                        Resume
-                    </Button>
+                        Download Resume
+                    </a>
                 </div>
             </nav>
 
