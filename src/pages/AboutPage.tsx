@@ -23,15 +23,26 @@ const AboutPage: React.FC = () => {
 
   const education = [
     {
-      degree: 'Master of Fine Arts in Graphic Design',
-      school: 'California Institute of the Arts',
-      years: '2012 - 2014',
+      degree: 'Bachelor of Science in Computer Science',
+      school: 'University of Westminster, United Kingdom',
+      years: '2023 - 2027',
     },
     {
-      degree: 'Bachelor of Science in Computer Science',
-      school: 'University of California, Berkeley',
-      years: '2008 - 2012',
-    }
+      degree: 'Foundation Certificate in Information Technology',
+      school: 'Informatics Institute of Technology, Sri Lanka',
+      years: '2022 - 2023',
+    },
+    {
+      degree: 'Advanced Level in Physical Science',
+      school: 'Dharmasoka Collage, Sri Lanka',
+      years: '2022 - 2023',
+    },
+    {
+      degree: 'Ordinary Level',
+      school: 'Dharmasoka Collage, Sri Lanka',
+      years: '2019 - 2020',
+    },
+
   ];
 
   return (
