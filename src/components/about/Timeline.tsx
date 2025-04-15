@@ -59,7 +59,7 @@ const Timeline: React.FC = () => {
       year: '2023 - present',
       title: 'Music Producer',
       company: 'Tiii Jay Music',
-      description: 'Produced LoFi and released multiple singles, EPs, and albums. Developed a unique sound and style that blends different genres, including hip-hop, and electronic music.',
+      description: 'Producing LoFi music that blends different genres, including hip-hop, and electronic music. Released multiple singles, EPs, and albums.',
     },
     {
       year: '2023 - present',
