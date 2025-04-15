@@ -47,28 +47,30 @@ const Contact: React.FC = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    const formData = new FormData();
-    formData.append("form-name", "contact");
-    Object.entries(values).forEach(([key, value]) => {
-      formData.append(key, value);
-    });
-  
-    fetch("/", {
+    fetch("https://formspree.io/f/yourFormID", {
       method: "POST",
-      body: formData,
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(values)
     })
-      .then(() => {
-        toast({
-          title: "Message sent!",
-          description: "Thank you for your message. I'll get back to you soon.",
-        });
-        form.reset();
+      .then((response) => {
+        if (response.ok) {
+          toast({
+            title: "Message sent!",
+            description: "Thank you for your message. I'll get back to you soon."
+          });
+          form.reset();
+        } else {
+          throw new Error("Form submission failed.");
+        }
       })
       .catch(() => {
         toast({
           title: "Oops!",
           description: "Something went wrong. Please try again later.",
-          variant: "destructive",
+          variant: "destructive"
         });
       });
   }
@@ -111,10 +113,9 @@ const Contact: React.FC = () => {
             <div className="bg-card border border-border p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
               <Form {...form}>
-                <form
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6"
                   action="https://formspree.io/f/mgvaqjql" 
                   method="POST"
-                  className="space-y-6"
                 >
                   <input type="hidden" name="_subject" value="New message from portfolio site" />
                   <input type="hidden" name="_next" value="https://tharujaye.com/thank-you" />
