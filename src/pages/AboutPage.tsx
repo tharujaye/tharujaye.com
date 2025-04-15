@@ -61,7 +61,7 @@ const AboutPage: React.FC = () => {
               <AnimatedSection animation="fade-in-right">
                 <div className="relative">
                   <img 
-                    src="/placeholder.svg" 
+                    src="/aboutmepagedp.jpg" 
                     alt="About me" 
                     className="rounded-xl shadow-lg w-full h-auto"
                   />
@@ -75,7 +75,7 @@ const AboutPage: React.FC = () => {
                       </div>
                       <div>
                         <p className="text-sm text-muted-foreground">Experience</p>
-                        <p className="text-xl font-bold">8+ Years</p>
+                        <p className="text-xl font-bold">4+ Years</p>
                       </div>
                     </div>
                   </div>
