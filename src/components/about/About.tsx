@@ -13,7 +13,7 @@ const About: React.FC = () => {
           <AnimatedSection animation="fade-in-right" className="relative">
             <div className="relative z-10">
               <img 
-                src="/portfolioaboutcollage.jpg" 
+                src="/aboutme.jpg" 
                 alt="About me" 
                 className="rounded-2xl w-full h-auto shadow-lg"
               />
