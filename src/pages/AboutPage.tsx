@@ -7,6 +7,7 @@ import AnimatedSection from '@/components/shared/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Badge } from '@/components/ui/badge';
+import { Download } from 'lucide-react';
 
 const AboutPage: React.FC = () => {
   // Scroll to top on page load
@@ -100,10 +101,11 @@ const AboutPage: React.FC = () => {
                 </p>
                 <Button asChild size="lg">
                   <a 
-                    href="/resume.pdf" 
+                    href="/TharushaJayawardenaCV.pdf" 
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <Download size={16} />
                     Download Resume
                   </a>
                 </Button>
