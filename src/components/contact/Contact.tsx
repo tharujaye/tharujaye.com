@@ -47,6 +47,7 @@ const Contact: React.FC = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
+    console.log("Form values:", values); // Debugging
     fetch("https://formspree.io/f/mgvaqjql", {
       method: "POST",
       headers: {
