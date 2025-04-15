@@ -51,17 +51,17 @@ const Contact: React.FC = () => {
       method: "POST",
       headers: {
         Accept: "application/json",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(values)
+      body: JSON.stringify(values),
     })
       .then((response) => {
         if (response.ok) {
           toast({
             title: "Message sent!",
-            description: "Thank you for your message. I'll get back to you soon."
+            description: "Thank you for your message. I'll get back to you soon.",
           });
-          form.reset();
+          form.reset(); // Reset the form fields
         } else {
           throw new Error("Form submission failed.");
         }
@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
         toast({
           title: "Oops!",
           description: "Something went wrong. Please try again later.",
-          variant: "destructive"
+          variant: "destructive",
         });
       });
   }
@@ -113,9 +113,9 @@ const Contact: React.FC = () => {
             <div className="bg-card border border-border p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6"
-                  action="https://formspree.io/f/mgvaqjql" 
-                  method="POST"
+                <form
+                  onSubmit={form.handleSubmit(onSubmit)} // Bind the onSubmit function
+                  className="space-y-6"
                 >
                   <input type="hidden" name="_subject" value="New message from portfolio site" />
                   <input type="hidden" name="_next" value="https://tharujaye.com/thank-you" />
