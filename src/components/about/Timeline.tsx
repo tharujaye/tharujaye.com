@@ -57,27 +57,27 @@ const Timeline: React.FC = () => {
   const timelineItems = [
     {
       year: '2023 - Present',
-      title: 'Lead UI/UX Designer',
+      title: 'UI/UX Designer',
       company: 'TechForward',
       description: 'Leading design strategy and implementation for enterprise SaaS products, managing a team of designers, and collaborating with product managers and developers.',
     },
     {
-      year: '2020 - 2023',
-      title: 'Senior Product Designer',
-      company: 'Innovation Labs',
+      year: '2023 - present',
+      title: 'Music Producer',
+      company: 'Tiii Jay Music',
       description: 'Created user-centered designs for mobile applications and web platforms, conducted user research, and implemented design systems that improved consistency.',
     },
     {
-      year: '2018 - 2020',
-      title: 'UI/UX Designer & Developer',
-      company: 'Creative Solutions',
+      year: '2023 - present',
+      title: 'Digital Marketing',
+      company: 'Tharu Jaye Studios',
       description: 'Designed and developed responsive websites and applications, collaborated with marketing teams to create brand identities, and optimized user experiences.',
     },
     {
-      year: '2015 - 2018',
-      title: 'Web Designer & Developer',
-      company: 'Digital Creatives',
-      description: 'Built responsive websites, created visual designs for digital marketing campaigns, and implemented frontend solutions for various client projects.',
+      year: '2022 - present',
+      title: 'Freelance Graphic Designer',
+      company: 'Novix Labs',
+      description: 'Designing graphics, visual designs for digital marketing campaigns for various client projects.',
     }
   ];
 
