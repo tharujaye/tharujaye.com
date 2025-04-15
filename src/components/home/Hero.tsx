@@ -89,17 +89,21 @@ const Hero: React.FC = () => {
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   <svg
-                    className="w-5 h-5"
-                    viewBox="0 0 512 512"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-[22px] h-[22px]"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
-                    <path d="M120 176h70c27 0 51 23 51 54s-24 54-51 54h-70v-108zm0 154h73c29 0 55 25 55 56s-26 56-55 56h-73v-112zM64 80h384c8.8 0 16 7.2 16 16v320c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16zm320 72c-10 0-20 1-28 3v23h54v-23c-8-2-18-3-26-3zm-28 64c-6 0-14 1-20 3v93c5 2 13 3 20 3 22 0 42-13 42-49s-20-50-42-50zm-248-24v168h91c41 0 77-30 77-84s-36-84-77-84h-91zm192 84c0 41 30 76 74 76s74-35 74-76-30-76-74-76-74 35-74 76z" />
+                    <path d="M2 9.5h4.8a2.5 2.5 0 0 1 0 5H2V9.5zM2 14.5h5.2a3 3 0 0 1 0 6H2v-6zM14.8 15.8h6.2a2.5 2.5 0 0 0-2.6-3c-1.7 0-2.6 1.2-2.6 3z" />
+                    <path d="M14.8 12.8V21M16 9h4" />
                   </svg>
                   <span className="sr-only">Behance</span>
                 </a>
 
-                {/* Added Medium Icon */}
+                {/* Medium Icon */}
                 <a
                   href="https://medium.com/@tharujaye"
                   target="_blank"
@@ -107,15 +111,20 @@ const Hero: React.FC = () => {
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   <svg
-                    className="w-5 h-5"
-                    viewBox="0 0 256 256"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-[22px] h-[22px]"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
-                    <path d="M72 128c0-39.8 31.5-72 70.4-72S213 88.2 213 128s-31.5 72-70.6 72S72 167.8 72 128zm-40 0c0-39.8 14.3-72 32-72s32 32.2 32 72-14.3 72-32 72S32 167.8 32 128zm176 0c0 39.8-10.7 72-24 72s-24-32.2-24-72 10.7-72 24-72 24 32.2 24 72z" />
+                    <path d="M4 4l4 8 4-8v16l-4-8-4 8V4z" />
+                    <path d="M20 4v16" />
                   </svg>
                   <span className="sr-only">Medium</span>
                 </a>
+                
               </div>
             </AnimatedSection>
           </div>
