@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -99,16 +98,15 @@ const AboutPage: React.FC = () => {
                   I'm passionate about continuous learning and staying on top of the latest design trends and 
                   technologies, while maintaining a focus on timeless design principles that create lasting value.
                 </p>
-                <Button asChild size="lg">
-                  <a 
-                    href="/TharushaJayawardenaCV.pdf" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Download size={16} />
-                    Download Resume
-                  </a>
-                </Button>
+                <a 
+                  href="/TharushaJayawardenaCV.pdf" // Replace with the actual path to your PDF file
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition"
+                >
+                  <Download size={16} />
+                  Download Resume
+                </a>
               </AnimatedSection>
             </div>
           </div>
