@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -112,86 +111,60 @@ const Contact: React.FC = () => {
             <div className="bg-card border border-border p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
               <Form {...form}>
-                <form 
-                  name="contact" 
-                  method="POST" 
-                  data-netlify="true" 
-                  netlify-honeypot="bot-field"
-                  onSubmit={form.handleSubmit(onSubmit)} 
+                <form
+                  action="https://formspree.io/f/mgvaqjql" 
+                  method="POST"
                   className="space-y-6"
                 >
-                  {/* Hidden fields for Netlify */}
-                  <input type="hidden" name="form-name" value="contact" />
-                  <p className="hidden">
-                    <label>
-                      Don’t fill this out: <input name="bot-field" />
-                    </label>
-                  </p>
+                  <input type="hidden" name="_subject" value="New message from portfolio site" />
+                  <input type="hidden" name="_next" value="https://tharujaye.com/thank-you" />
+                  <input type="hidden" name="_captcha" value="false" />
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <FormField
-                      control={form.control}
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
                       name="name"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Name</FormLabel>
-                          <FormControl>
-                            <Input placeholder="Your name" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Email</FormLabel>
-                          <FormControl>
-                            <Input type="email" placeholder="Your email" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
+                      required
+                      className="w-full border rounded px-3 py-2"
                     />
                   </div>
 
-                  <FormField
-                    control={form.control}
-                    name="subject"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Subject</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Message subject" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full border rounded px-3 py-2"
+                    />
+                  </div>
 
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Message</FormLabel>
-                        <FormControl>
-                          <Textarea 
-                            placeholder="Write your message here..." 
-                            rows={5}
-                            {...field} 
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows={4}
+                      className="w-full border rounded px-3 py-2"
+                    />
+                  </div>
 
-                  <Button type="submit" className="w-full sm:w-auto flex items-center gap-2">
-                    Send Message <Send size={16} />
-                  </Button>
+                  <button
+                    type="submit"
+                    className="bg-primary text-white px-6 py-2 rounded hover:bg-primary/90 transition"
+                  >
+                    Send Message
+                  </button>
                 </form>
               </Form>
             </div>
