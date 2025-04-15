@@ -54,13 +54,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 };
 
 const Timeline: React.FC = () => {
-  const timelineItems = [
-    {
-      year: '2023 - Present',
-      title: 'UI/UX Designer',
-      company: 'TechForward',
-      description: 'Designed and developed responsive websites and applications, collaborated with marketing teams to create brand identities, and optimized user experiences. Leading design strategy and implementation for enterprise SaaS products, managing a team of designers, and collaborating with product managers and developers.',
-    },
+  const timelineItems = [    
     {
       year: '2023 - present',
       title: 'Music Producer',
