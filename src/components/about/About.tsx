@@ -27,16 +27,16 @@ const About: React.FC = () => {
               About Me
             </h2>
             <h3 className="text-3xl md:text-4xl font-bold mb-6">
-              A passionate designer &amp; developer based in San Francisco
+              A passionate designer &amp; developer based in Sri Lanka
             </h3>
             <p className="text-muted-foreground mb-6">
-              With over 8 years of experience in the creative technology industry, I've had 
+              With over 4 years of experience in the creative technology industry, I've had 
               the privilege of working with amazing clients across various sectors. 
               My approach combines design thinking with technical expertise to create 
               solutions that are not only beautiful but also functional and user-focused.
             </p>
             <p className="text-muted-foreground mb-6">
-              My journey began in web design, then expanded to include UX/UI design, 
+              My journey began in graphic design, then expanded to include UX/UI design, 
               front-end and back-end development, and mobile app creation. This 
               multidisciplinary background allows me to oversee projects holistically, 
               ensuring seamless execution from concept to completion.
@@ -44,11 +44,11 @@ const About: React.FC = () => {
 
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div>
-                <p className="text-3xl font-bold text-primary">150+</p>
+                <p className="text-3xl font-bold text-primary">20+</p>
                 <p className="text-muted-foreground">Projects Completed</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-primary">80+</p>
+                <p className="text-3xl font-bold text-primary">10+</p>
                 <p className="text-muted-foreground">Happy Clients</p>
               </div>
             </div>

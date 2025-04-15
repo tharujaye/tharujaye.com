@@ -147,13 +147,13 @@ const Hero: React.FC = () => {
                 {/* Projects info box */}
                 <div className="absolute -top-6 -right-6 bg-black/90 rounded-2xl p-4 shadow-lg border border-border z-20">
                   <p className="text-sm font-medium text-gray-400">Projects</p>
-                  <p className="text-2xl font-bold">150+</p>
+                  <p className="text-2xl font-bold">20+</p>
                 </div>
                 
                 {/* Experience info box */}
                 <div className="absolute -bottom-6 -left-6 bg-black/90 rounded-2xl p-4 shadow-lg border border-border z-20">
                   <p className="text-sm font-medium text-gray-400">Experience</p>
-                  <p className="text-2xl font-bold">8+ Years</p>
+                  <p className="text-2xl font-bold">4+ Years</p>
                 </div>
               </div>
             </AnimatedSection>
