@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    fetch("https://formspree.io/f/yourFormID", {
+    fetch("https://formspree.io/f/mgvaqjql", {
       method: "POST",
       headers: {
         Accept: "application/json",
