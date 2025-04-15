@@ -48,14 +48,33 @@ const Contact: React.FC = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
+    const formData = new FormData();
+    formData.append("form-name", "contact");
+    Object.entries(values).forEach(([key, value]) => {
+      formData.append(key, value);
     });
-    form.reset();
+  
+    fetch("/", {
+      method: "POST",
+      body: formData,
+    })
+      .then(() => {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        form.reset();
+      })
+      .catch(() => {
+        toast({
+          title: "Oops!",
+          description: "Something went wrong. Please try again later.",
+          variant: "destructive",
+        });
+      });
   }
-
+  
+  // Contact information
   const contactInfo = [
     {
       icon: <Mail className="h-6 w-6" />,

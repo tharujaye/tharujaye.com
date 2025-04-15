@@ -33,7 +33,7 @@ const Services: React.FC = () => {
   const services = [
     {
       title: 'UI/UX Design',
-      description: 'Creating beautiful, intuitive interfaces that enhance user experience and drive engagement.',
+      description: 'Creating beautiful, intuitive interfaces that enhance user experience.',
       icon: <Layout size={24} />,
     },
     {
