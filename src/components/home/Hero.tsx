@@ -139,7 +139,7 @@ const Hero: React.FC = () => {
               <div className="relative w-full max-w-md">
                 <div className="aspect-square rounded-xl bg-gradient-to-br from-highlight-purple to-highlight-cyan/30 blur-3xl absolute top-0 left-0 w-full h-full opacity-20" />
                 <img 
-                  src="/placeholder.svg" 
+                  src="/tharusha_dp.jpg" 
                   alt="Tharusha Jayawardena - Creative Professional" 
                   className="relative z-10 rounded-xl w-full h-auto object-cover"
                 />
