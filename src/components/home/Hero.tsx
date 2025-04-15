@@ -89,11 +89,11 @@ const Hero: React.FC = () => {
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   <svg
-                    className="w-[22px] h-[22px]"
+                    className="w-6 h-6" // Consistent size
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    strokeWidth="1.8"
+                    strokeWidth="2" // Consistent stroke width
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
                   <span className="sr-only">Behance</span>
                 </a>
 
-                {/* Medium Icon */}
+                {/* Adjusted Medium Icon */}
                 <a
                   href="https://medium.com/@tharujaye"
                   target="_blank"
@@ -111,11 +111,11 @@ const Hero: React.FC = () => {
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   <svg
-                    className="w-[22px] h-[22px]"
+                    className="w-6 h-6" // Consistent size
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    strokeWidth="1.8"
+                    strokeWidth="2" // Consistent stroke width
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
