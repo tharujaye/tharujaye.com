@@ -12,14 +12,14 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Column 1 - Logo and Info */}
           <div className="md:col-span-2">
-            <h2 className="text-2xl font-heading font-bold highlight-gradient mb-4">Portfolio.</h2>
+            <h2 className="text-2xl font-heading font-bold highlight-gradient mb-4">tharujaye</h2>
             <p className="text-muted-foreground">
               A multidisciplinary creative professional specializing in UI/UX design, 
               web development, and branding.
             </p>
             <div className="flex gap-4 mt-6">
               <a 
-                href="https://github.com" 
+                href="https://github.com/tharujaye" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-foreground/70 hover:text-primary transition-colors"
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                 <span className="sr-only">GitHub</span>
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.com/in/tharujaye" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-foreground/70 hover:text-primary transition-colors"
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
                 <span className="sr-only">LinkedIn</span>
               </a>
               <a 
-                href="https://figma.com" 
+                href="https://figma.com/tharujaye" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-foreground/70 hover:text-primary transition-colors"
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                 <span className="sr-only">Figma</span>
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://twitter.com/tharujaye" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-foreground/70 hover:text-primary transition-colors"

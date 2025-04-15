@@ -20,14 +20,14 @@ const Portfolio: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Finance Dashboard UI',
-      category: ['UI/UX', 'Web'],
-      image: '/placeholder.svg',
+      title: 'EcoNest',
+      category: ['UI/UX', 'Mobile'],
+      image: '/projects/EcoNest_dp.jpg',
       link: '/portfolio/finance-dashboard',
     },
     {
       id: 2,
-      title: 'E-commerce Mobile App',
+      title: 'Energex',
       category: ['UI/UX', 'Mobile'],
       image: '/placeholder.svg',
       link: '/portfolio/ecommerce-app',

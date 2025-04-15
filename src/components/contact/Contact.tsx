@@ -71,7 +71,7 @@ const Contact: React.FC = () => {
     },
     {
       icon: <MapPin className="h-6 w-6" />,
-      title: 'Office',
+      title: 'Location',
       value: 'Ambalangoda, Sri Lanka',
       link: 'https://maps.app.goo.gl/xqSaUyFRhGFmJMx17',
     },
