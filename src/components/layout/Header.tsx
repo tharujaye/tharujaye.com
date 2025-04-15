@@ -86,7 +86,7 @@ const Header: React.FC = () => {
                         className="flex items-center gap-1 bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition"
                     >
                         <Download size={16} />
-                        Download Resume
+                        Resume
                     </a>
                 </div>
             </nav>
@@ -129,7 +129,7 @@ const Header: React.FC = () => {
                                   className="w-full flex items-center gap-1 justify-center bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition"
                                 >
                                   <Download size={16} />
-                                  Download Resume
+                                  Resume
                                 </a>
                             </li>
                         </ul>
