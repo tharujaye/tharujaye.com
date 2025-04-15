@@ -28,7 +28,7 @@ const AboutPage: React.FC = () => {
       years: '2023 - 2027',
     },
     {
-      degree: 'Foundation Certificate in Information Technology',
+      degree: 'Foundation Certificate in Higher Education',
       school: 'Informatics Institute of Technology, Sri Lanka',
       years: '2022 - 2023',
     },
@@ -74,7 +74,7 @@ const AboutPage: React.FC = () => {
                   <img 
                     src="/aboutmepagedp.jpg" 
                     alt="About me" 
-                    className="rounded-xl shadow-lg w-full h-auto"
+                    className="rounded-xl shadow-lg w-3/4 h-auto mx-auto" // Adjusted width to 75% of the container
                   />
                   <div className="absolute -top-6 -right-6 bg-card p-6 rounded-xl border border-border shadow-lg">
                     <div className="flex items-center gap-4">
