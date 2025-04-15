@@ -118,7 +118,7 @@ const Header: React.FC = () => {
                             ))}
                             <li className="pt-4">
                                 <a
-                                  href="/path-to-your-resume.pdf" // Replace with the actual path to your PDF file
+                                  href="/TharushaJayawardenaCV.pdf" // Replace with the actual path to your PDF file
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="w-full flex items-center gap-1 justify-center bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition"
