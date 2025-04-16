@@ -32,8 +32,6 @@ const formSchema = z.object({
   }),
 });
 
-
-
 const Contact: React.FC = () => {
   const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
@@ -113,60 +111,99 @@ const Contact: React.FC = () => {
           <AnimatedSection animation="fade-in-right">
             <div className="bg-card border border-border p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
+
               <Form {...form}>
                 <form
-                  onSubmit={form.handleSubmit(onSubmit)} // Bind the onSubmit function
+                  onSubmit={form.handleSubmit(onSubmit)}
                   className="space-y-6"
                 >
+                  {/* Formspree Hidden Fields */}
                   <input type="hidden" name="_subject" value="New message from portfolio site" />
                   <input type="hidden" name="_next" value="https://tharujaye.com/thank-you" />
                   <input type="hidden" name="_captcha" value="false" />
 
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      className="w-full px-3 py-2 rounded border border-border bg-background text-foreground placeholder:text-muted-foreground"
-                    />
-                  </div>
+                  {/* Name Field */}
+                  <FormField
+                    control={form.control}
+                    name="name"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Name</FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="Your name"
+                            {...field}
+                            className="bg-background text-foreground placeholder:text-muted-foreground"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="w-full px-3 py-2 rounded border border-border bg-background text-foreground placeholder:text-muted-foreground"
-                    />
-                  </div>
+                  {/* Email Field */}
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Email</FormLabel>
+                        <FormControl>
+                          <Input
+                            type="email"
+                            placeholder="you@example.com"
+                            {...field}
+                            className="bg-background text-foreground placeholder:text-muted-foreground"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      required
-                      rows={4}
-                      className="w-full px-3 py-2 rounded border border-border bg-background text-foreground placeholder:text-muted-foreground"
-                    />
-                  </div>
+                  {/* Subject Field */}
+                  <FormField
+                    control={form.control}
+                    name="subject"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Subject</FormLabel>
+                        <FormControl>
+                          <Input
+                            placeholder="What’s this about?"
+                            {...field}
+                            className="bg-background text-foreground placeholder:text-muted-foreground"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
-                  <button
-                    type="submit"
-                    className="bg-primary text-white px-6 py-2 rounded hover:bg-primary/90 transition"
-                  >
+                  {/* Message Field */}
+                  <FormField
+                    control={form.control}
+                    name="message"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Message</FormLabel>
+                        <FormControl>
+                          <Textarea
+                            placeholder="Type your message here..."
+                            {...field}
+                            className="bg-background text-foreground placeholder:text-muted-foreground"
+                            rows={4}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <Button type="submit" className="flex gap-2 items-center">
+                    <Send size={16} />
                     Send Message
-                  </button>
+                  </Button>
                 </form>
               </Form>
             </div>
