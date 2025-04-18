@@ -14,15 +14,14 @@ export default {
 		container: {
 			center: true,
 			padding: '2rem',
-			screens: {
-				
-      			
-      			
-      			
-				'2xl': '1400px'
-			}
+			
+			
+			
 		},
 		extend: {
+			screens: {
+				'2xl': '1400px'
+			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 				heading: ['Poppins', 'sans-serif'],
