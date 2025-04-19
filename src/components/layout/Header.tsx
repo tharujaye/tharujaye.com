@@ -58,7 +58,7 @@ const Header: React.FC = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-6">
+            <nav className="flex items-center justify-between w-full z-50 bg-background text-foreground px-6 py-4 shadow">
                 <ul className="flex gap-6">
                     {navigation.map((item) => (
                         <li key={item.name}>
